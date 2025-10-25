@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+      // Get the current path
+      var path = window.location.pathname;
+
+      // Get the repo name from your 'base' config (e.g., /finsync-my-copy/)
+      var repoName = '/finsync-final/'; 
+
+      // Remove the repo name from the start of the path
+      var pathWithoutRepo = path.replace(repoName, '');
+
+      // Store the path to redirect to in session storage
+      sessionStorage.setItem('redirectPath', pathWithoutRepo);
+
+      // Redirect to the root (index.html)
+      window.location.href = repoName;
+    </script>
+  </head>
+  <body>
+    If you are not redirected automatically, please <a href="/finsync-my-copy/">click here</a>.
+  </body>
+</html>
