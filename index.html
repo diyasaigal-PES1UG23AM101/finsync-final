@@ -1,26 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinSync - Smart Financial Learning for Students</title>
-    <meta name="description" content="FinSync helps undergraduate students learn safe financial spending with a protection layer. Guardian-approved transactions for responsible money management." />
-    <meta name="keywords" content="financial education, student finance, money management, spending protection, guardian approval, FinTech" />
-    <meta name="author" content="FinSync Team" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinSync - Smart Financial Learning for Students</title>
+    <meta name="description" content="FinSync helps undergraduate students learn safe financial spending with a protection layer. Guardian-approved transactions for responsible money management." />
+    <meta name="keywords" content="financial education, student finance, money management, spending protection, guardian approval, FinTech" />
+    <meta name="author" content="FinSync Team" />
 
-    <meta property="og:title" content="FinSync - Smart Financial Learning for Students" />
-    <meta property="og:description" content="Learn safe financial habits with guardian-approved spending protection. Built for students, trusted by parents." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:title" content="FinSync - Smart Financial Learning for Students" />
+    <meta property="og:description" content="Learn safe financial habits with guardian-approved spending protection. Built for students, trusted by parents." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="FinSync - Smart Financial Learning" />
-    <meta name="twitter:description" content="Guardian-approved financial learning platform for students" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FinSync - Smart Financial Learning" />
+    <meta name="twitter:description" content="Guardian-approved financial learning platform for students" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script type="text/javascript">
+      var path = sessionStorage.getItem('redirectPath');
+      sessionStorage.removeItem('redirectPath');
+      if (path && path !== '/') {
+        history.replaceState(null, null, path);
+      }
+    </script>
+      </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
